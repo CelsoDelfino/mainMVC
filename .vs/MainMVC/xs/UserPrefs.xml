@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{44757AEE-7F01-4EB8-BEFE-1F4CA421E6CD}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.MainMVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainMVC/Views/Candidato/Index.cshtml">
+    <Files>
+      <File FileName="MainMVC/Views/Candidato/Create.cshtml" Line="1" Column="1" />
+      <File FileName="MainMVC/Views/Candidato/GetAll.cshtml" Line="1" Column="1" />
+      <File FileName="MainMVC/Controllers/CandidatoController.cs" Line="30" Column="27" />
+      <File FileName="MainMVC/Views/Candidato/Index.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MainMVC" expanded="True">
+            <Node name="MainMVC" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Repositories" expanded="True">
+                <Node name="Interfaces" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Candidato" expanded="True" />
+              </Node>
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
