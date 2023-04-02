@@ -8,7 +8,7 @@ namespace MainMVC.Data
 	{
 		public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) {}
 
-		public DbSet<Candidato> Candidatos { get; set; }
+		public DbSet<Candidato> Candidato { get; set; }
 
 	}
 }

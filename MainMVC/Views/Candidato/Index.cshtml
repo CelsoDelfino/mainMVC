@@ -1,1 +1,21 @@
-﻿
+﻿@model CandidatoCursoViewModel
+
+@{
+    var className = Model.Cursos.Count > 0 ? "popular" : null;
+}
+
+<h2 class="@className">@Model.Candidato.Nome</h2>
+
+@if (Model.Cursos.Count == 0)
+{
+    <text>Don't exist any content.</text>
+}
+else
+{
+    <ul>
+        @foreach (var cursos in Model.Cursos)
+        {
+            <li>@cursos.Nome</li>
+        }
+    </ul>
+}

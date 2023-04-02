@@ -1,12 +1,15 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using MainMVC.Data;
 using MainMVC.Models;
 using MainMVC.Repositories.Interfaces;
+using MainMVC.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -25,24 +28,26 @@ namespace MainMVC.Controllers
 
 
         // GET: /<controller>/
-        public IActionResult Index()
+        public ActionResult Index()
         {
-            return View();
-        }
+            var candidato = new Candidato() { Nome = "celso", Email = "celso@gmail.com" };
 
-        public IActionResult Create(Candidato candidato)
-        { 
-            _repository.Create(candidato);
-            _context.SaveChanges();
-            return View();
-        }
+            var cursos = new List<Cursos>() 
+            {
+                new Cursos() {Nome = "asp net c# 1"},
+                new Cursos() {Nome = "asp net c# 2"},
+                new Cursos() {Nome = "asp net c# 3"},
+                new Cursos() {Nome = "asp net c# 4"},
+            };
 
-        public IActionResult GetAll()
-        {
-            var list = _repository.GetAll();
-            return View(list);
-        }
+            var viewModel = new CandidatoCursoViewModel()
+            {
+                Candidato= candidato,
+                Cursos = cursos,
+            };
 
+            return View(viewModel);
+        }
     }
 }
 

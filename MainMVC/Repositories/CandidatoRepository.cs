@@ -24,7 +24,7 @@ namespace MainMVC.Repositories
                         Estado = candidato.Estado,
                         Img = candidato.Img
                     };
-                    _context.Candidatos.Add(newCandidato);
+                    _context.Candidato.Add(newCandidato);
 
                     return candidato;
                 }
@@ -37,8 +37,8 @@ namespace MainMVC.Repositories
 
         public IEnumerable<Candidato> GetAll()
         {
-            var listCandidatos = _context.Candidatos.ToList();
-            return listCandidatos;
+            var listPessoas = _context.Candidato.ToList();
+            return listPessoas;
         }
     }
 }

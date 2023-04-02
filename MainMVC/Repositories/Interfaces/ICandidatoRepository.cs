@@ -5,7 +5,7 @@ namespace MainMVC.Repositories.Interfaces
 {
 	public interface ICandidatoRepository
 	{
-		Candidato Create(Candidato candidato);
+        Candidato Create(Candidato candidato);
 		IEnumerable<Candidato> GetAll();
 	}
 }

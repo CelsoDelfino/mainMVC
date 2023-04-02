@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/celsodelfino/Projects/MainMVC/MainMVC/MainMVC.csproj": {}
+    "C:\\main\\mainMVC\\MainMVC\\MainMVC.csproj": {}
   },
   "projects": {
-    "/Users/celsodelfino/Projects/MainMVC/MainMVC/MainMVC.csproj": {
+    "C:\\main\\mainMVC\\MainMVC\\MainMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/celsodelfino/Projects/MainMVC/MainMVC/MainMVC.csproj",
+        "projectUniqueName": "C:\\main\\mainMVC\\MainMVC\\MainMVC.csproj",
         "projectName": "MainMVC",
-        "projectPath": "/Users/celsodelfino/Projects/MainMVC/MainMVC/MainMVC.csproj",
-        "packagesPath": "/Users/celsodelfino/.nuget/packages/",
-        "outputPath": "/Users/celsodelfino/Projects/MainMVC/MainMVC/obj/",
+        "projectPath": "C:\\main\\mainMVC\\MainMVC\\MainMVC.csproj",
+        "packagesPath": "C:\\Users\\cdelfino\\.nuget\\packages\\",
+        "outputPath": "C:\\main\\mainMVC\\MainMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/celsodelfino/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\cdelfino\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -48,15 +50,19 @@
               "target": "Package",
               "version": "[7.0.4, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.4, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "jQuery": {
               "target": "Package",
-              "version": "[7.0.0, )"
+              "version": "[3.6.4, )"
             }
           },
           "imports": [
@@ -70,20 +76,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.osx-x64",
-              "version": "[6.0.13, 6.0.13]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.13, 6.0.13]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -92,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
